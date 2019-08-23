@@ -1,0 +1,72 @@
+[
+	{
+		"name": "",
+		"key": "mdr0",
+		"id": "0"
+	},
+	{
+		"name": "Business Down",
+		"key": "mdr1",
+		"id": "1"
+	},
+	{
+		"name": "Activities",
+		"key": "mdr2",
+		"id": "2"
+	},
+	{
+		"name": "Top Issues",
+		"key": "mdr3",
+		"id": "3"
+	},
+	{
+		"name": "Service Orders Items",
+		"key": "mdr4",
+		"id": "4"
+	},
+	{
+		"name": "Service Orders Item 10",
+		"key": "mdr5",
+		"id": "5"
+	},
+	{
+		"name": "Milestones",
+		"key": "mdr6",
+		"id": "6"
+	},
+	{
+		"name": "Cases",
+		"key": "mdr7",
+		"id": "7"
+	},
+	{
+		"name": "Customer Map",
+		"key": "mdr8",
+		"id": "8"
+	},
+	{
+		"name": "Incidents",
+		"key": "mdr9",
+		"id": "9"
+	},
+	{
+		"name": "System Down Monitor",
+		"key": "mdr11",
+		"id": "11"
+	},
+	{
+		"name": "Service Requests",
+		"key": "mdr12",
+		"id": "12"
+	},
+	{
+		"name": "Complaints",
+		"key": "mdr13",
+		"id": "13"
+	},
+	{
+		"name": "Opportunities",
+		"key": "mdr22",
+		"id": "22"
+	}
+]

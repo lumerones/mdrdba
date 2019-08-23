@@ -1,0 +1,43 @@
+[
+	{
+		"name": "Title",
+		"desc": "Insert only Title",
+		"options": [
+			{
+				"filter": "Refresh Interval",
+				"desc": "&refreshInterval",
+				"value": "30"
+			},
+			{
+				"filter": "Source",
+				"desc": "&source",
+				"value": "icp"
+			},
+			{
+				"filter": "Flip Interval",
+				"desc": "&flipInterval",
+				"value": "30"
+			},
+			{
+				"filter": "Mask Data",
+				"desc": "&MaskData",
+				"value": "No"
+			},
+			{
+				"filter": "Layout",
+				"desc": "&layout",
+				"value": "dark"
+			},
+			{
+				"filter": "Run Title",
+				"desc": "&run_title",
+				"value": "No"
+			},
+			{
+				"filter": "Service Team Visible",
+				"desc": "&ServiceTeamVisible",
+				"value": "true"
+			}
+		]
+	}
+]

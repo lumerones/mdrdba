@@ -1,0 +1,1194 @@
+[{
+	"key": "mdr1",
+	"name": "Refresh Interval",
+	"filter": "refreshInterval",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr1",
+	"name": "Flip Interval",
+	"filter": "flipInterval",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr1",
+	"name": "Data Source",
+	"filter": "source",
+	"options": [{
+		"name": "ICP",
+		"value": "icp"
+	}, {
+		"name": "ICT",
+		"value": "ict"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr1",
+	"name": "Title",
+	"filter": "title",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr1",
+	"name": "Mask Data",
+	"filter": "MaskData",
+	"options": [{
+		"name": "Yes",
+		"value": "Yes"
+	}, {
+		"name": "No",
+		"value": "No"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr1",
+	"name": "Zoom",
+	"filter": "zoom",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr1",
+	"name": "Layout",
+	"filter": "layout",
+	"options": [{
+		"name": "Blue",
+		"value": "blue"
+	}, {
+		"name": "Dark",
+		"value": "dark"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr1",
+	"name": "Run Title",
+	"filter": "run_title",
+	"options": [{
+		"name": "Yes",
+		"value": "yes"
+	}, {
+		"name": "No",
+		"value": "no"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr2",
+	"name": "Data Source",
+	"filter": "source",
+	"options": [{
+		"name": "ICP",
+		"value": "icp"
+	}, {
+		"name": "ICT",
+		"value": "ict"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr2",
+	"name": "Refresh Interval",
+	"filter": "refreshInterval",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr2",
+	"name": "Flip Interval",
+	"filter": "flipInterval",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr2",
+	"name": "Title",
+	"filter": "title",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr2",
+	"name": "Mask Data",
+	"filter": "MaskData",
+	"options": [{
+		"name": "Yes",
+		"value": "Yes"
+	}, {
+		"name": "No",
+		"value": "No"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr2",
+	"name": "Zoom",
+	"filter": "zoom",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr2",
+	"name": "Layout",
+	"filter": "layout",
+	"options": [{
+		"name": "Blue",
+		"value": "blue"
+	}, {
+		"name": "Dark",
+		"value": "dark"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr2",
+	"name": "Hide Priority",
+	"filter": "hidePrio",
+	"options": [{
+		"name": "Yes",
+		"value": "Yes"
+	}, {
+		"name": "No",
+		"value": "No"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr2",
+	"name": "Sorter",
+	"filter": "sorter",
+	"options": [{
+		"name": "Priority Descending",
+		"value": "prioKey/desc"
+	}, {
+		"name": "Priority Ascending",
+		"value": "prioKey/asc"
+	}, {
+		"name": "Reference Customer Descending",
+		"value": "refCustSort/desc"
+	}, {
+		"name": "Reference Customer Ascending",
+		"value": "refCustSort/asc"
+	}, {
+		"name": "Customer Descending",
+		"value": "customer/desc"
+	}, {
+		"name": "Customer Ascending",
+		"value": "customer/asc"
+	}, {
+		"name": "Issue Descending",
+		"value": "issue/desc"
+	}, {
+		"name": "Issue Ascending",
+		"value": "issue/asc"
+	}, {
+		"name": "Due Time Descending",
+		"value": "dueTimeKey/desc"
+	}, {
+		"name": "Due Time Ascending",
+		"value": "dueTimeKey/asc"
+	}, {
+		"name": "Rating Descending",
+		"value": "ratingKey/desc"
+	}, {
+		"name": "Rating Ascending",
+		"value": "ratingKey/asc"
+	}, {
+		"name": "Status Descending",
+		"value": "statusKey/desc"
+	}, {
+		"name": "Status Ascending",
+		"value": "statusKey/asc"
+	}, {
+		"name": "Employee Descending",
+		"value": "employee/desc"
+	}, {
+		"name": "Employee Ascending",
+		"value": "employee/asc"
+	}, {
+		"name": "Country Descending",
+		"value": "country/desc"
+	}, {
+		"name": "Country Ascending",
+		"value": "country/asc"
+	}, {
+		"name": "Delivery Unit Descending",
+		"value": "delUnitText/desc"
+	}, {
+		"name": "Delivery Unit Ascending",
+		"value": "delUnitText/asc"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr2",
+	"name": "Service Team Visible",
+	"filter": "ServiceTeamVisible",
+	"options": [{
+		"name": "True",
+		"value": "true"
+	}, {
+		"name": "False",
+		"value": "false"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr2",
+	"name": "Display Date",
+	"filter": "disp_date",
+	"options": [{
+		"name": "Due Date",
+		"value": ""
+	}, {
+		"name": "Go Live",
+		"value": "gl"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr2",
+	"name": "Responsible Empty Only",
+	"filter": "resp_empty_only",
+	"options": [{
+		"name": "Yes",
+		"value": "yes"
+	}, {
+		"name": "No",
+		"value": "no"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr2",
+	"name": "Run Title",
+	"filter": "run_title",
+	"options": [{
+		"name": "Yes",
+		"value": "yes"
+	}, {
+		"name": "No",
+		"value": "no"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr3",
+	"name": "Refresh Interval",
+	"filter": "refreshInterval",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr3",
+	"name": "Flip Interval",
+	"filter": "flipInterval",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr3",
+	"name": "Cross Issue",
+	"filter": "crossIssue",
+	"options": [{
+		"name": "Yes",
+		"value": "yes"
+	}, {
+		"name": "No",
+		"value": "no"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr3",
+	"name": "Data Source",
+	"filter": "source",
+	"options": [{
+		"name": "ICP",
+		"value": "icp"
+	}, {
+		"name": "ICT",
+		"value": "ict"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr3",
+	"name": "Title",
+	"filter": "title",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr3",
+	"name": "Mask Data",
+	"filter": "MaskData",
+	"options": [{
+		"name": "Yes",
+		"value": "Yes"
+	}, {
+		"name": "No",
+		"value": "No"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr3",
+	"name": "Zoom",
+	"filter": "zoom",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr3",
+	"name": "Layout",
+	"filter": "layout",
+	"options": [{
+		"name": "Blue",
+		"value": "blue"
+	}, {
+		"name": "Dark",
+		"value": "dark"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr3",
+	"name": "Rolling Weeks",
+	"filter": "rolling",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr3",
+	"name": "Run Title",
+	"filter": "run_title",
+	"options": [{
+		"name": "Yes",
+		"value": "yes"
+	}, {
+		"name": "No",
+		"value": "no"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr4",
+	"name": "Start CW",
+	"filter": "startcw",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr4",
+	"name": "End CW",
+	"filter": "endcw",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr4",
+	"name": "Refresh Interval",
+	"filter": "refreshInterval",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr4",
+	"name": "Flip Interval",
+	"filter": "flipInterval",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr4",
+	"name": "Data Source",
+	"filter": "source",
+	"options": [{
+		"name": "ICP",
+		"value": "icp"
+	}, {
+		"name": "ICT",
+		"value": "ict"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr4",
+	"name": "Title",
+	"filter": "title",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr4",
+	"name": "Mask Data",
+	"filter": "MaskData",
+	"options": [{
+		"name": "Yes",
+		"value": "Yes"
+	}, {
+		"name": "No",
+		"value": "No"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr4",
+	"name": "Layout",
+	"filter": "layout",
+	"options": [{
+		"name": "Blue",
+		"value": "blue"
+	}, {
+		"name": "Dark",
+		"value": "dark"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr4",
+	"name": "Run Title",
+	"filter": "run_title",
+	"options": [{
+		"name": "Yes",
+		"value": "yes"
+	}, {
+		"name": "No",
+		"value": "no"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr5",
+	"name": "Start CW",
+	"filter": "startcw",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr5",
+	"name": "End CW",
+	"filter": "endcw",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr5",
+	"name": "Refresh Interval",
+	"filter": "refreshInterval",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr5",
+	"name": "Flip Interval",
+	"filter": "flipInterval",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr5",
+	"name": "Data Source",
+	"filter": "source",
+	"options": [{
+		"name": "ICP",
+		"value": "icp"
+	}, {
+		"name": "ICT",
+		"value": "ict"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr5",
+	"name": "Title",
+	"filter": "title",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr5",
+	"name": "Mask Data",
+	"filter": "MaskData",
+	"options": [{
+		"name": "Yes",
+		"value": "Yes"
+	}, {
+		"name": "No",
+		"value": "No"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr5",
+	"name": "Layout",
+	"filter": "layout",
+	"options": [{
+		"name": "Blue",
+		"value": "blue"
+	}, {
+		"name": "Dark",
+		"value": "dark"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr6",
+	"name": "Refresh Interval",
+	"filter": "refreshInterval",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr6",
+	"name": "Flip Interval",
+	"filter": "flipInterval",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr6",
+	"name": "Data Source",
+	"filter": "source",
+	"options": [{
+		"name": "ICP",
+		"value": "icp"
+	}, {
+		"name": "ICT",
+		"value": "ict"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr6",
+	"name": "Title",
+	"filter": "title",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr6",
+	"name": "Mask Data",
+	"filter": "MaskData",
+	"options": [{
+		"name": "Yes",
+		"value": "Yes"
+	}, {
+		"name": "No",
+		"value": "No"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr6",
+	"name": "Layout",
+	"filter": "layout",
+	"options": [{
+		"name": "Blue",
+		"value": "blue"
+	}, {
+		"name": "Dark",
+		"value": "dark"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr6",
+	"name": "Go Live Start",
+	"filter": "golivestart",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr6",
+	"name": "Go Live End",
+	"filter": "goliveend",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr6",
+	"name": "Display Date",
+	"filter": "disp_date",
+	"options": [{
+		"name": "Go Live Date",
+		"value": "gl"
+	}, {
+		"name": "Last Changed Date",
+		"value": "lc"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr6",
+	"name": "Display Name",
+	"filter": "disp_name",
+	"options": [{
+		"name": "Person Responsible",
+		"value": "resp"
+	}, {
+		"name": "Processor",
+		"value": "proc"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr6",
+	"name": "Run Title",
+	"filter": "run_title",
+	"options": [{
+		"name": "Yes",
+		"value": "yes"
+	}, {
+		"name": "No",
+		"value": "no"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr7",
+	"name": "Refresh Interval",
+	"filter": "refreshInterval",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr7",
+	"name": "Flip Interval",
+	"filter": "flipInterval",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr7",
+	"name": "Data Source",
+	"filter": "source",
+	"options": [{
+		"name": "ICP",
+		"value": "icp"
+	}, {
+		"name": "ICT",
+		"value": "ict"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr7",
+	"name": "Title",
+	"filter": "title",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr7",
+	"name": "Mask Data",
+	"filter": "MaskData",
+	"options": [{
+		"name": "Yes",
+		"value": "Yes"
+	}, {
+		"name": "No",
+		"value": "No"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr7",
+	"name": "Zoom",
+	"filter": "zoom",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr7",
+	"name": "Layout",
+	"filter": "layout",
+	"options": [{
+		"name": "Blue",
+		"value": "blue"
+	}, {
+		"name": "Dark",
+		"value": "dark"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr7",
+	"name": "List View",
+	"filter": "listView",
+	"options": [{
+		"name": "Yes",
+		"value": "yes"
+	}, {
+		"name": "No",
+		"value": "no"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr7",
+	"name": "Created Weeks/Days",
+	"filter": "created",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr7",
+	"name": "Display Date",
+	"filter": "disp_date",
+	"options": [{
+		"name": "Go Live Date",
+		"value": "gl"
+	}, {
+		"name": "Last Changed Date",
+		"value": "lc"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr7",
+	"name": "Display Name",
+	"filter": "disp_name",
+	"options": [{
+		"name": "Person Responsible",
+		"value": "resp"
+	}, {
+		"name": "Processor",
+		"value": "proc"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr7",
+	"name": "Display Phase",
+	"filter": "disp_phase",
+	"options": [{
+		"name": "Display Phase",
+		"value": "yes"
+	}, {
+		"name": "Display Case Status",
+		"value": "no"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr7",
+	"name": "Service Team Visible",
+	"filter": "ServiceTeamVisible",
+	"options": [{
+		"name": "True",
+		"value": "true"
+	}, {
+		"name": "False",
+		"value": "false"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr7",
+	"name": "Display Top Issues",
+	"filter": "top_issues",
+	"options": [{
+		"name": "Yes",
+		"value": "yes"
+	}, {
+		"name": "No",
+		"value": "no"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr7",
+	"name": "Run Title",
+	"filter": "run_title",
+	"options": [{
+		"name": "Yes",
+		"value": "yes"
+	}, {
+		"name": "No",
+		"value": "no"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr8",
+	"name": "Refresh Interval",
+	"filter": "refreshInterval",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr8",
+	"name": "Data Source",
+	"filter": "source",
+	"options": [{
+		"name": "ICP",
+		"value": "icp"
+	}, {
+		"name": "ICT",
+		"value": "ict"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr8",
+	"name": "Title",
+	"filter": "title",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr8",
+	"name": "Mask Data",
+	"filter": "MaskData",
+	"options": [{
+		"name": "Yes",
+		"value": "Yes"
+	}, {
+		"name": "No",
+		"value": "No"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr8",
+	"name": "Zoom",
+	"filter": "zoom",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr8",
+	"name": "Layout",
+	"filter": "layout",
+	"options": [{
+		"name": "Blue",
+		"value": "blue"
+	}, {
+		"name": "Dark",
+		"value": "dark"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr8",
+	"name": "Run Title",
+	"filter": "run_title",
+	"options": [{
+		"name": "Yes",
+		"value": "yes"
+	}, {
+		"name": "No",
+		"value": "no"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr9",
+	"name": "Refresh Interval",
+	"filter": "refreshInterval",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr9",
+	"name": "Flip Interval",
+	"filter": "flipInterval",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr9",
+	"name": "Data Source",
+	"filter": "source",
+	"options": [{
+		"name": "ICP",
+		"value": "icp"
+	}, {
+		"name": "ICT",
+		"value": "ict"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr9",
+	"name": "Title",
+	"filter": "title",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr9",
+	"name": "Mask Data",
+	"filter": "MaskData",
+	"options": [{
+		"name": "Yes",
+		"value": "Yes"
+	}, {
+		"name": "No",
+		"value": "No"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr9",
+	"name": "Zoom",
+	"filter": "zoom",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr9",
+	"name": "Layout",
+	"filter": "layout",
+	"options": [{
+		"name": "Blue",
+		"value": "blue"
+	}, {
+		"name": "Dark",
+		"value": "dark"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr9",
+	"name": "Run Title",
+	"filter": "run_title",
+	"options": [{
+		"name": "Yes",
+		"value": "yes"
+	}, {
+		"name": "No",
+		"value": "no"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr11",
+	"name": "Refresh Interval",
+	"filter": "refreshInterval",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr11",
+	"name": "Data Source",
+	"filter": "source",
+	"options": [{
+		"name": "I7P",
+		"value": "i7p"
+	}, {
+		"name": "I7T",
+		"value": "i7t"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr11",
+	"name": "Flip Interval",
+	"filter": "flipInterval",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr11",
+	"name": "Title",
+	"filter": "title",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr11",
+	"name": "Mask Data",
+	"filter": "MaskData",
+	"options": [{
+		"name": "Yes",
+		"value": "Yes"
+	}, {
+		"name": "No",
+		"value": "No"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr11",
+	"name": "Zoom",
+	"filter": "zoom",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr11",
+	"name": "Layout",
+	"filter": "layout",
+	"options": [{
+		"name": "Blue",
+		"value": "blue"
+	}, {
+		"name": "Dark",
+		"value": "dark"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr12",
+	"name": "Refresh Interval",
+	"filter": "refreshInterval",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr12",
+	"name": "Flip Interval",
+	"filter": "flipInterval",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr12",
+	"name": "Data Source",
+	"filter": "source",
+	"options": [{
+		"name": "ICP",
+		"value": "icp"
+	}, {
+		"name": "ICT",
+		"value": "ict"
+	}, {
+		"name": "ICX",
+		"value": "icx"
+	}, {
+		"name": "ICV",
+		"value": "icv"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr12",
+	"name": "Title",
+	"filter": "title",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr12",
+	"name": "Mask Data",
+	"filter": "MaskData",
+	"options": [{
+		"name": "Yes",
+		"value": "Yes"
+	}, {
+		"name": "No",
+		"value": "No"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr12",
+	"name": "Zoom",
+	"filter": "zoom",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr12",
+	"name": "Layout",
+	"filter": "layout",
+	"options": [{
+		"name": "Blue",
+		"value": "blue"
+	}, {
+		"name": "Dark",
+		"value": "dark"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr13",
+	"name": "Refresh Interval",
+	"filter": "refreshInterval",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr13",
+	"name": "Flip Interval",
+	"filter": "flipInterval",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr13",
+	"name": "Data Source",
+	"filter": "source",
+	"options": [{
+		"name": "BCP",
+		"value": "bcp"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr13",
+	"name": "Title",
+	"filter": "title",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr13",
+	"name": "Mask Data",
+	"filter": "MaskData",
+	"options": [{
+		"name": "Yes",
+		"value": "Yes"
+	}, {
+		"name": "No",
+		"value": "No"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr13",
+	"name": "Layout",
+	"filter": "layout",
+	"options": [{
+		"name": "Blue",
+		"value": "blue"
+	}, {
+		"name": "Dark",
+		"value": "dark"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr13",
+	"name": "Run Title",
+	"filter": "run_title",
+	"options": [{
+		"name": "Yes",
+		"value": "yes"
+	}, {
+		"name": "No",
+		"value": "no"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr22",
+	"name": "Refresh Interval",
+	"filter": "refreshInterval",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr22",
+	"name": "Flip Interval",
+	"filter": "flipInterval",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr22",
+	"name": "Data Source",
+	"filter": "source",
+	"options": [{
+		"name": "ICP",
+		"value": "icp"
+	}, {
+		"name": "ICT",
+		"value": "ict"
+	}, {
+		"name": "ICX",
+		"value": "icx"
+	}, {
+		"name": "ICV",
+		"value": "icv"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr22",
+	"name": "Title",
+	"filter": "title",
+	"type": "Input",
+	"info": "Parameter"
+}, {
+	"key": "mdr22",
+	"name": "Mask Data",
+	"filter": "MaskData",
+	"options": [{
+		"name": "Yes",
+		"value": "Yes"
+	}, {
+		"name": "No",
+		"value": "No"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}, {
+	"key": "mdr22",
+	"name": "Layout",
+	"filter": "layout",
+	"options": [{
+		"name": "Blue",
+		"value": "blue"
+	}, {
+		"name": "Dark",
+		"value": "dark"
+	}],
+	"type": "Single Select",
+	"info": "Parameter"
+}]
