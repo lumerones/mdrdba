@@ -1,0 +1,77 @@
+/* Don't change the classes below */
+
+.sapMShellBrandingBar {
+    height: 0;
+}
+
+.sapMPageHeader::before {
+    border-top-width: 0rem;
+}
+
+:focus {
+    outline: none;
+}
+
+
+/* You can create/change classes below here */
+
+.sapMApp {
+    background: transparent;
+}
+
+.sapMTitleStyleH1 {
+    font-size: 2rem;
+    color: #FF9700;
+    text-shadow: 1px 1px 3px #333333;
+    padding: 3px;
+}
+
+.textCenter {
+    color: #333333;
+    background-color: #CAE4FB;
+    font-size: 1rem;
+    text-align: center;
+    text-shadow: none;
+    border: 1px solid #3F5161;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.labelColor {
+    color: #333333;
+    font-size: 1.125rem;
+}
+
+.sapMImg {
+    border: 1px solid #3F5161 !important;
+    border-radius: 10px;
+    padding: 0.25rem;
+}
+
+.sapMGT {
+    box-sizing: content-box !important;
+    border: 1px solid #3F5161 !important;
+    border-radius: 5px !important;
+    background-color: #CAE4FB;
+    padding: 0.25rem !important;
+    box-shadow: none !important;
+}
+
+.tileHomePage {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#firstSelection-subHeader-BarPH {
+    display: none;
+}
+
+.sapMPage,
+.sapMMessagePageInner {
+    background: linear-gradient(to bottom, #A9C6DE, #E7ECF0);
+}
+
+.sapMMessagePage .sapMMessagePageInner .sapUiIcon::before {
+    color: #FFFFFF;
+    text-shadow: 1px 1px 3px #333333;
+}
