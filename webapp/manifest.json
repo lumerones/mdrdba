@@ -1,0 +1,187 @@
+{
+	"_version": "1.8.0",
+	"sap.app": {
+		"id": "DashboardBuilder",
+		"type": "application",
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.7"
+		},
+		"dataSources": {
+			"_templates": {
+				"uri": "model/templates.json",
+				"type": "JSON"
+			},
+			"_filters": {
+				"uri": "model/filters.json",
+				"type": "JSON"
+			},
+			"_parameters": {
+				"uri": "model/parameters.json",
+				"type": "JSON"
+			},
+			"_dashboards": {
+				"uri": "model/dashboards.json",
+				"type": "JSON"
+			}
+		}
+	},
+	"sap.ui": {
+		"_version": "1.1.0",
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_hcb",
+			"sap_bluecrystal",
+			"sap_belize",
+			"sap_belize_plus"
+		]
+	},
+	"sap.ui5": {
+		"_version": "1.1.0",
+		"rootView": {
+			"viewName": "DashboardBuilder.view.App",
+			"type": "XML",
+			"id": "app"
+		},
+		"dependencies": {
+			"minUI5Version": "1.54.0",
+			"libs": {
+				"sap.m": {},
+				"sap.ui.core": {},
+				"sap.ui.layout": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "DashboardBuilder.i18n.i18n"
+				}
+			},
+			"templates": {
+				"type": "sap.ui.model.json.JSONModel",
+				"dataSource": "_templates",
+				"preload": true
+			},
+			"filters": {
+				"type": "sap.ui.model.json.JSONModel",
+				"dataSource": "_filters",
+				"preload": true
+			},
+			"parameters": {
+				"type": "sap.ui.model.json.JSONModel",
+				"dataSource": "_parameters",
+				"preload": true
+			},
+			"dashboards": {
+				"type": "sap.ui.model.json.JSONModel",
+				"dataSource": "_dashboards",
+				"preload": true
+			}
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			],
+			"js": [
+				{
+					"uri": "Component.js"
+				}
+			]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "DashboardBuilder.view",
+				"controlId": "mainPage",
+				"transition": "slide",
+				"bypassed": {
+					"target": "home"
+				},
+				"async": true
+			},
+			"routes": [
+				{
+					"pattern": "",
+					"name": "Start",
+					"target": "Home"
+				},
+				{
+					"pattern": ":?query:",
+					"name": "App",
+					"target": "App"
+				},
+				{
+					"pattern": "home",
+					"name": "Home",
+					"target": "Home"
+				},
+				{
+					"pattern": "analyze",
+					"name": "Analyze",
+					"target": "Analyze"
+				},
+				{
+					"pattern": "build",
+					"name": "Build",
+					"target": "Build"
+				}
+			],
+			"targets": {
+				"App": {
+					"viewPath": "DashboardBuilder.view",
+					"viewName": "App",
+					"controlId": "app",
+					"controlAggregation": "pages"
+				},
+				"Home": {
+					"parent": "App",
+					"viewPath": "DashboardBuilder.view",
+					"viewName": "Overview",
+					"controlId": "homeTab",
+					"controlAggregation": "content"
+				},
+				"Analyze": {
+					"parent": "App",
+					"viewPath": "DashboardBuilder.view",
+					"viewName": "Analyze",
+					"controlId": "analyzeTab",
+					"controlAggregation": "content"
+				},
+				"Build": {
+					"parent": "App",
+					"viewPath": "DashboardBuilder.view",
+					"viewName": "Build",
+					"controlId": "buildTab",
+					"controlAggregation": "content"
+				}
+			}
+		}
+	},
+	"sap.platform.hcp": {
+		"uri": "webapp",
+		"_version": "1.1.0"
+	}
+}
