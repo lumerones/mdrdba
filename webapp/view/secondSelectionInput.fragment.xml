@@ -1,0 +1,21 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Dialog id="secondSelectionInput" title="Input Options" width="100%">
+		<VBox direction="Column" id="inputVbox" alignContent="Center" alignItems="Center" justifyContent="Center" class="sapUiSmallMargin">
+	        <items>
+	            <Label text="Insert the value below:" id="topLabel" design="Bold"/>
+	            <Input
+					id="userInput"
+					type="Text"
+					placeholder="Enter ID..."
+					enabled="true"
+					editable="true"/>
+				<Text text="To insert more than 1 item, separate them with comma (i.e. 12345,12345)" id="bottomText" maxLines="2" wrapping="true" class="sapUiTinyMarginTop"/>
+	        </items>
+        </VBox>
+        <beginButton>
+        	<Button
+        		text="OK"
+        		press="handleInputClose"/>
+        </beginButton>
+	</Dialog>
+</core:FragmentDefinition>

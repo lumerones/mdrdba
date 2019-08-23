@@ -1,0 +1,56 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" height="100%"
+	controllerName="DashboardBuilder.controller.Overview" class="overviewPageClass">
+	<Page title="Page" id="overviewPage" showFooter="false" showHeader="false" enableScrolling="true" floatingFooter="false"
+		showSubHeader="false" backgroundDesign="Transparent">
+		<content>
+			<VBox width="100%" id="__vbox1" alignContent="Center" alignItems="Center" direction="Column">
+				<items>
+					<FormattedText htmlText="&lt;strong&gt;&lt;h1&gt;{i18n>welcomeTitle}&lt;/h1&gt;&lt;/strong&gt;"
+						class="titleOverview sapUiLargeMarginTopBottom"/>
+					<FormattedText htmlText="&lt;p&gt;{i18n>welcomeFirstLine}&lt;/p&gt;&lt;p&gt;{i18n>welcomeSecondLine}&lt;/p&gt;"
+						class="textCenter sapUiMediumMarginBottom sapUiLargeMarginBeginEnd"/>
+					<FlexBox alignItems="Center" alignContent="Center" justifyContent="SpaceAround" width="100%" wrap="Wrap">
+						<items>
+							<GenericTile id="analyzeTile" frameType="TwoByOne" backgroundImage="images/Tile_AnalyzeURL.png" class="tileHomePage sapUiSmallMargin"
+								tooltip="Analyze Guide" press="onPress">
+								<TileContent>
+									<NewsContent contentText="Simple guide to analyze your URL in MDR DB&amp;A" subheader="Click here"/>
+								</TileContent>
+							</GenericTile>
+							<GenericTile id="buildTile" frameType="TwoByOne" backgroundImage="images/Tile_BuildURL.png" class="tileHomePage sapUiSmallMargin"
+								tooltip="Build Guide" press="onPress">
+								<TileContent>
+									<NewsContent contentText="Simple guide to build your own URL in MDR DB&amp;A" subheader="Click here"/>
+								</TileContent>
+							</GenericTile>
+							<GenericTile id="dbstoolsTile" frameType="TwoByOne" backgroundImage="images/Tile_DBSJam.png" class="tileHomePage sapUiSmallMargin"
+								tooltip="MCC Tools Page" press="onPress">
+								<TileContent>
+									<NewsContent contentText="DBS MCC-tools Jam Page" subheader="Click here for everything related to dashboards"/>
+								</TileContent>
+							</GenericTile>
+							<GenericTile id="appWikiTile" frameType="TwoByOne" backgroundImage="images/Tile_MainWiki.png" class="tileHomePage sapUiSmallMargin"
+								tooltip="Main Wiki" press="onPress">
+								<TileContent>
+									<NewsContent contentText="MDR Dashboard Builder &amp; Analyzer Wiki" subheader="Click here for updates and documentation"/>
+								</TileContent>
+							</GenericTile>
+							<GenericTile id="mdrTile" frameType="TwoByOne" backgroundImage="images/Tile_mccMDR.png" class="tileHomePage sapUiSmallMargin"
+								tooltip="MCC-MDR" press="onPress">
+								<TileContent>
+									<NewsContent contentText="MCC Dashboard Repository" subheader="Click here for global and regional dashboards"/>
+								</TileContent>
+							</GenericTile>
+							<GenericTile id="bestPracticesTile" frameType="TwoByOne" backgroundImage="images/Tile_Dashboards.png" class="tileHomePage sapUiSmallMargin"
+								tooltip="Best Practices" press="onPress">
+								<TileContent>
+									<NewsContent contentText="Best Practices for Dashboard URLs" subheader="Click here for more information"/>
+								</TileContent>
+							</GenericTile>
+						</items>
+					</FlexBox>
+				</items>
+			</VBox>
+		</content>
+	</Page>
+</mvc:View>

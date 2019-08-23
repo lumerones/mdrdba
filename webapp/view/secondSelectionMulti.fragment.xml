@@ -1,0 +1,8 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<SelectDialog id="secondSelectionMulti" title="Select Options" liveChange="onSearch" confirm="handleSelectClose" cancel="handleSelectClose" multiSelect="true" items="{ path: '/', sorter: { path: 'group', group: true} }">
+		<StandardListItem
+			title="{name}"
+			description="{value}"
+			type="Active"/>
+	</SelectDialog>
+</core:FragmentDefinition>

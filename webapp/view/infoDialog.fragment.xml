@@ -1,0 +1,15 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" height="100%" displayBlock="true">
+	<Dialog title="About" id="infoDialog" verticalScrolling="false" horizontalScrolling="false" class="sapUiSizeCompact">
+		<content>
+			<VBox alignContent="Center" alignItems="Center" justifyContent="Center" class="sapUiMediumMargin">
+				<Image src="./images/favicon.png" width="8rem" decorative="true" class="sapUiSmallMarginBottom"/>
+				<FormattedText htmlText="&lt;h2&gt;&lt;strong&gt;MDR Dashboard Builder &amp; Analyzer&lt;/strong&gt;&lt;/h2&gt;"/>
+				<FormattedText htmlText="&lt;h6&gt;Version 3.0.0&lt;/h6&gt;"/>
+				<FormattedText htmlText="&lt;br&gt;For feedback and reporting bug/errors, please send an email to lucas.eron@sap.com."/>
+			</VBox>
+		</content>
+		<endButton>
+			<Button id="closeButton" text="Close" press="closeInfoDialog"/>
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

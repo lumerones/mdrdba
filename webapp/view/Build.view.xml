@@ -1,0 +1,76 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="DashboardBuilder.controller.Build" height="100%">
+	<!--<MessagePage title="Build" id="buildPage" showHeader="false" text="Page Under Development!" enableFormattedText="true"
+		description="&lt;center&gt;This page is not fully ready for usage at the moment, but feel free to use the &lt;strong&gt;Analyze Page&lt;/strong&gt; for now. For updates on this page, check the web-application wiki page, link at the 'Links' button below.&lt;/center&gt;"
+		icon="sap-icon://cancel-maintenance"/>-->
+	<Page title="Build" id="buildPage" showSubHeader="false" showHeader="false" floatingFooter="true" enableScrolling="false" showFooter="true">
+		<content>
+			<VBox id="vboxBuild" direction="Column" alignContent="Center" width="auto" class="sapUiTinyMargin" height="90%" alignItems="Center"
+				renderType="Bare">
+				<items>
+					<HBox id="__hbox0" width="100%" class="sapUiSmallMarginBottom">
+						<items>
+							<HBox id="selectionType" width="50%" alignContent="Start" renderType="Bare" alignItems="Center">
+								<Label text="Dashboard Type:" id="__dashTypeLabel" vAlign="Middle" textAlign="Center" labelFor="dashType"
+									class="sapUiTinyMarginBeginEnd labelColor"/>
+								<ComboBox id="dashType" items="{dashboards>/}" selectionChange="dashSelection" placeholder="Select one...">
+									<core:Item xmlns:core="sap.ui.core" key="{dashboards>key}" text="{dashboards>name}"/>
+								</ComboBox>
+								<Button id="buttonReset" press="onReset" type="Reject" icon="sap-icon://reset" tooltip="Reset" class="sapUiTinyMarginBegin"/>
+							</HBox>
+							<HBox id="__vbox2" width="50%" direction="Row" alignContent="Start" alignItems="Center" justifyContent="End" renderType="Bare">
+								<items>
+									<Button id="buttonAddFilter" press="handleFilterButtonPress" type="Emphasized" icon="sap-icon://add" tooltip="Add Filter" text="Filter"/>
+									<Button id="buttonAddParam" press="handleParameterButtonPress" class="sapUiTinyMarginBeginEnd" type="Emphasized" icon="sap-icon://add"
+										tooltip="Add Parameter" text="Parameter"/>
+									<Button id="buttonGenerateUrl" press="generateUrl" type="Accept" icon="sap-icon://activate" tooltip="Generate URL"/>
+								</items>
+							</HBox>
+						</items>
+					</HBox>
+					<Panel id="buildPanel" expandable="true" expanded="false" headerText="Results" width="100%" height="calc(100% - 48px)">
+						<content>
+							<Table id="buildTableFilters" alternateRowColors="false" mode="Delete" delete="onDelete">
+								<headerToolbar>
+									<Toolbar>
+										<content>
+											<Title text="Selected Filter" titleStyle="H4"/>
+											<ToolbarSpacer/>
+											<Title text="Values" class="sapUiSmallMarginEnd" titleStyle="H4"/>
+										</content>
+									</Toolbar>
+								</headerToolbar>
+								<columns>
+									<Column width="16em"/>
+									<Column hAlign="End"/>
+								</columns>
+							</Table>
+							<Table id="buildTableParams" alternateRowColors="false" mode="Delete" delete="onDelete">
+								<headerToolbar>
+									<Toolbar>
+										<content>
+											<Title text="Selected Parameter" titleStyle="H4"/>
+											<ToolbarSpacer/>
+											<Title text="Values" class="sapUiSmallMarginEnd" titleStyle="H4"/>
+										</content>
+									</Toolbar>
+								</headerToolbar>
+								<columns>
+									<Column width="16em"/>
+									<Column hAlign="End"/>
+								</columns>
+							</Table>
+						</content>
+					</Panel>
+				</items>
+			</VBox>
+		</content>
+		<footer>
+			<Bar id="__bar3">
+				<contentLeft>
+					<Button text="Templates" id="templatesButton" press="openTemplatesDialog"/>
+				</contentLeft>
+			</Bar>
+		</footer>
+	</Page>
+</mvc:View>

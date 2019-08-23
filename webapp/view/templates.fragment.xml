@@ -1,0 +1,8 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<SelectDialog id="templatesDialog" title="Select Template" confirm="handleTemplateClose" growingThreshold="3" cancel="handleTemplateClose"
+		multiSelect="false" items="{templates>/}">
+		<items>
+			<StandardListItem title="{templates>name}" description="{templates>desc}" type="Active"/>
+		</items>
+	</SelectDialog>
+</core:FragmentDefinition>

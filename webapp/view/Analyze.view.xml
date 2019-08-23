@@ -1,0 +1,94 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" height="100%"
+	controllerName="DashboardBuilder.controller.Analyze">
+	<Page title="Analyze" id="analyzePage" showSubHeader="false" showHeader="false" showFooter="true" enableScrolling="false"
+		floatingFooter="true" backgroundDesign="Transparent">
+		<content>
+			<VBox id="__vbox0" direction="Column" alignContent="Center" width="auto" class="sapUiTinyMargin" height="90%" alignItems="Center"
+				renderType="Bare">
+				<items>
+					<HBox alignContent="Center" direction="Row" width="100%" alignItems="Center" class="sapUiSmallMarginBottom" justifyContent="SpaceAround"
+						renderType="Div" height="7.4rem">
+						<items>
+							<Label id="inputBoxLabel" text="Insert URL:" vAlign="Middle" textAlign="Left" width="100%" class="labelColor"/>
+							<HBox direction="Row" width="100%" height="100%" justifyContent="Center" alignItems="Center" alignContent="Center" renderType="Bare"
+								class="sapUiTinyMarginBeginEnd">
+								<items>
+									<TextArea id="inputBox" wrapping="Hard" growingMaxLines="0" growing="false" cols="0"
+										placeholder="i.e. https://pgp.wdf.sap.corp/sap/bc/ui5_ui5/sap/zs_dashboard/f/mdr..." rows="4" textAlign="Begin"
+										showValueStateMessage="false" textDirection="LTR" width="100%" height="100%"/>
+								</items>
+							</HBox>
+							<VBox alignContent="Center" alignItems="Center" direction="Column" justifyContent="Center" width="auto" height="100%">
+								<items>
+									<Button id="submitButton" press="onSubmit" width="100%" icon="sap-icon://begin" tooltip="Submit" type="Emphasized"/>
+									<Button id="clearButton" press="clearAnalyze" width="100%" icon="sap-icon://delete" tooltip="Clear" type="Default"/>
+								</items>
+							</VBox>
+						</items>
+					</HBox>
+					<Panel id="resultsPanel" expandable="true" expanded="false" headerText="Results" width="100%" height="calc(100% - 48px)">
+						<content>
+							<Table id="filtersTable" alternateRowColors="false">
+								<headerToolbar>
+									<Toolbar>
+										<content>
+											<Title text="Filters" titleStyle="H4"/>
+										</content>
+									</Toolbar>
+								</headerToolbar>
+								<columns>
+									<Column width="12em">
+										<Text text="Filters"/>
+									</Column>
+									<Column width="6em" hAlign="Center" vAlign="Middle">
+										<Text text="Operators"/>
+									</Column>
+									<Column hAlign="End">
+										<Text text="Values"/>
+									</Column>
+								</columns>
+							</Table>
+							<Table id="paramsTable" alternateRowColors="false">
+								<headerToolbar>
+									<Toolbar>
+										<content>
+											<Title text="Parameters" titleStyle="H4"/>
+										</content>
+									</Toolbar>
+								</headerToolbar>
+								<columns>
+									<Column width="12em">
+										<Text text="Parameters"/>
+									</Column>
+									<Column width="6em" hAlign="Center" vAlign="Middle">
+										<Text text="Operators"/>
+									</Column>
+									<Column hAlign="End">
+										<Text text="Values"/>
+									</Column>
+								</columns>
+							</Table>
+						</content>
+					</Panel>
+				</items>
+			</VBox>
+		</content>
+		<footer>
+			<Bar id="analyzeBar">
+				<contentLeft>
+					<HBox alignContent="Center" alignItems="Center" justifyContent="Center" renderType="Bare" height="100%">
+						<items>
+							<Label id="mdrLabel" labelFor="urlBox" text="MDR Type:" vAlign="Middle" textDirection="LTR" class="sapUiTinyMarginEnd"/>
+							<TextArea id="urlBox" showValueStateMessage="false" textDirection="LTR" textAlign="Center" wrapping="Off" cols="1" rows="1"
+								valueLiveUpdate="true" height="100%" maxLength="30" editable="false" growing="true" visible="false"/>
+						</items>
+					</HBox>
+				</contentLeft>
+				<contentRight>
+					<Label id="userFriendlyLabel" text="User Friendly:" class="sapUiTinyMarginEnd"/>
+					<Switch id="userFriendlySwitch" name="User Friendly" change="modifyObj"/>
+				</contentRight>
+			</Bar>
+		</footer>
+	</Page>
+</mvc:View>

@@ -1,0 +1,10 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Dialog id="tileDialog" showHeader="true" title="Select Template...">
+		<content>
+			<HBox>
+				<GenericTile id="TitleTemplate" class="sapUiTinyMargin" header="Default parameters from MDR" subheader="Insert only the Title" press="handleTiles"/>
+				<GenericTile id="TestTemplate" class="sapUiTinyMargin" header="Test Tile" subheader="Nothing really happens" press=""/>
+			</HBox>
+		</content>
+	</Dialog>
+</core:FragmentDefinition>
